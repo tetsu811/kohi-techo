@@ -2,8 +2,8 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { getColors, Theme, FONT@} from 'A/lib/theme';
-import { useI18n } from 'A/lib/i18n';
+import { getColors, Theme, FONT } from '@/lib/theme';
+import { useI18n } from '@/lib/i18n';
 
 export default function HomePage() {
   const { locale } = useI18n();
