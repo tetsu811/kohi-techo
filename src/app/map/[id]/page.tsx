@@ -8,7 +8,7 @@ import { useI18n } from '@/lib/i18n';
 import { useAuth } from '@/hooks/useAuth';
 import { supabase, Shop, ShopReview } from '@/lib/supabase';
 import HexRadar from '@/components/HexRadar';
-import ScoreSlider from '@/components/ScoreSlider';
+import ScoreSlider from '@/components/ScoreSlider'
 
 export default function ShopDetailPage() {
   const params = useParams();
@@ -276,7 +276,7 @@ export default function ShopDetailPage() {
         {/* All reviews */}
         <div style={{ marginTop: 40 }}>
           <h3 style={{ fontFamily: FONT.serif, fontSize: 22, fontWeight: 600, color: c.text, borderLeft: `3px solid ${c.accent}`, paddingLeft: 12 }}>
-            {tx.allReviews}（{reviews.length{）
+            {tx.allReviews}（{reviews.length}）
           </h3>
 
           {reviews.length === 0 ? (
