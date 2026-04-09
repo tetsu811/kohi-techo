@@ -1,34 +1,34 @@
-// çç²æå¸ theme â warm coffee palette
-// Accent: çç«æ© / Roast Orange #C75B12
+// 珈琲手帖 theme — warm coffee palette
+// Accent: 焙火橘 / Roast Orange #C75B12
 
 export type Theme = 'light' | 'dark';
 
 export function getColors(t: Theme) {
   return t === 'dark'
     ? {
-        bg: '#1C140F',        // æ·±çè±èæ¯
-        bgSoft: '#241913',    // ç¨äº®çèæ¯
-        card: '#2A1F18',      // å¡ç
+        bg: '#1C140F',        // 深焙豆背景
+        bgSoft: '#241913',    // 稍亮的背景
+        card: '#2A1F18',      // 卡片
         cardHover: '#35281F',
-        border: '#3E2F24',    // éæ¡
-        text: '#F5EBE0',      // ç±³ç½ä¸»æå­
-        textSub: '#BCAAA4',   // å¥¶åå¡æ¬¡æå­
-        textMuted: '#8D6E63', // æ·¡åå¡è¼å©
-        accent: '#D97B3C',    // çç«æ©ï¼dark æ¨¡å¼ç¨äº®ï¼
+        border: '#3E2F24',    // 邊框
+        text: '#F5EBE0',      // 米白主文字
+        textSub: '#BCAAA4',   // 奶咖啡次文字
+        textMuted: '#8D6E63', // 淡咖啡輔助
+        accent: '#D97B3C',    // 焙火橘（dark 模式稍亮）
         accentSoft: '#3E2317',
         success: '#7FB069',
         warn: '#E8A838',
       }
     : {
-        bg: '#FAF7F2',        // å¥¶è²ç±³ç½èæ¯
-        bgSoft: '#F3EEE5',    // æç±³
-        card: '#FFFFFF',      // ç½å¡ç
+        bg: '#FAF7F2',        // 奸色米白背景
+        bgSoft: '#F3EEE5',    // 暖米
+        card: '#FFFFFF',      // 白卡片
         cardHover: '#FBF8F3',
-        border: '#E8DED0',    // ç±³è²éæ¡
-        text: '#3E2723',      // æ·±çè±ä¸»æå­
-        textSub: '#8D6E63',   // æ¿éµåå¡æ¬¡æå­
-        textMuted: '#BCAAA4', // å¥¶æ³¡ç°
-        accent: '#C75B12',    // çç«æ©
+        border: '#E8DED0',    // 米色銹
+        text: '#3E2723',      // 深焙豆主文字
+        textSub: '#8D6E63',   // 拿鐵咖啡次文字
+        textMuted: '#BCAAA4', // 奶泡灰
+        accent: '#C75B12',    // 焙火橘
         accentSoft: '#FBE9D8',
         success: '#5B8A3C',
         warn: '#D48806',
@@ -37,12 +37,12 @@ export function getColors(t: Theme) {
 
 // Font stacks
 export const FONT = {
-  // æ¨é¡ï¼æ¥å¼è¥¯ç·ï¼å®é«ï¼ï¼åªéæ²ç©©
+  // 標題：日式西線（宋體），優雅沉穩
   serif: '"Noto Serif TC", "Noto Serif JP", "Cormorant Garamond", serif',
-  // å§æï¼æ¸æ°å¥½è®
+  // 內文：清晰好讀
   sans: '"Noto Sans TC", "Noto Sans JP", -apple-system, "Helvetica Neue", sans-serif',
-  // å¯æé»ç¶´ï¼åæ½¤æ¥ç³»ï¼Zen Maru Gothic / Klee Oneï¼
+  // 可愛點綴：圓潤日系（Zen Maru Gothic / Klee One）
   cute: '"Zen Maru Gothic", "Klee One", "Noto Sans TC", sans-serif',
-  // æå¯«æ
+  // 手寫感
   hand: '"Klee One", "Zen Maru Gothic", cursive',
 };
