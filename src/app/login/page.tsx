@@ -31,17 +31,17 @@ export default function LoginPage() {
   const c = getColors(theme);
 
   const tx = {
-    welcome: locale === 'ja' ? 'ãããããªããã' : locale === 'en' ? 'Welcome back.' : 'æ­¡è¿åå°æå¸ã',
-    subSignin: locale === 'ja' ? 'ããªãã®ä¸æ¯ãç¶ãããã' : locale === 'en' ? 'Continue your tasting journal.' : 'ç¹¼çºä½ çåèç´éã',
-    subSignup: locale === 'ja' ? 'çç²æå¸ãå§ãããã' : locale === 'en' ? 'Start your coffee techÅ.' : 'éåä½ çåå¡æå¸ã',
+    welcome: locale === 'ja' ? 'おかえりなさい。' : locale === 'en' ? 'Welcome back.' : '歡迎回到手帖。',
+    subSignin: locale === 'ja' ? 'あなたの一杯を続けよう。' : locale === 'en' ? 'Continue your tasting journal.' : '繼續你的品茗紀錄。',
+    subSignup: locale === 'ja' ? '珈琲手帖を始めよう。' : locale === 'en' ? 'Start your coffee techō.' : '開啟你的咖啡手帖。',
     email: 'Email',
-    password: locale === 'ja' ? 'ãã¹ã¯ã¼ã' : locale === 'en' ? 'Password' : 'å¯ç¢¼',
-    name: locale === 'ja' ? 'ãåå' : locale === 'en' ? 'Display name' : 'é¡¯ç¤ºåç¨±',
-    signin: locale === 'ja' ? 'ã­ã°ã¤ã³' : locale === 'en' ? 'Sign in' : 'ç»å¥',
-    signup: locale === 'ja' ? 'æ°è¦ç»é²' : locale === 'en' ? 'Sign up' : 'è¨»å',
-    switchToSignup: locale === 'ja' ? 'ã¢ã«ã¦ã³ããä½ã â' : locale === 'en' ? 'Create account â' : 'éæ²æå¸³èï¼è¨»å â',
-    switchToSignin: locale === 'ja' ? 'â ã­ã°ã¤ã³ã«æ»ã' : locale === 'en' ? 'â Back to sign in' : 'â å·²æå¸³èï¼ç»å¥',
-    checkEmail: locale === 'ja' ? 'ã¡ã¼ã«ããç¢ºèªãã ãã' : locale === 'en' ? 'Check your email to confirm' : 'è«å°ä¿¡ç®±ç¢ºèªè¨»åä¿¡',
+    password: locale === 'ja' ? 'パスワード' : locale === 'en' ? 'Password' : '密碼',
+    name: locale === 'ja' ? 'お名前' : locale === 'en' ? 'Display name' : '顯示名稱',
+    signin: locale === 'ja' ? 'ログイン' : locale === 'en' ? 'Sign in' : '登入',
+    signup: locale === 'ja' ? '新規登録' : locale === 'en' ? 'Sign up' : '註冊',
+    switchToSignup: locale === 'ja' ? 'アカウントを作る →' : locale === 'en' ? 'Create account →' : '還沒有帳號？註冊 →',
+    switchToSignin: locale === 'ja' ? '← ログインに戻る' : locale === 'en' ? '← Back to sign in' : '← 已有帳號？登入',
+    checkEmail: locale === 'ja' ? 'メールをご確認ください' : locale === 'en' ? 'Check your email to confirm' : '請到信箱確認註冊信',
   };
 
   const handleSubmit = async () => {
@@ -106,7 +106,7 @@ export default function LoginPage() {
         }}
       >
         <div style={{ textAlign: 'center', marginBottom: 28 }}>
-          <div style={{ fontFamily: FONT.hand, fontSize: 13, color: c.accent }}>â çç²æå¸ â</div>
+          <div style={{ fontFamily: FONT.hand, fontSize: 13, color: c.accent }}>— 珈琲手帖 —</div>
           <h1 style={{ fontFamily: FONT.serif, fontSize: 28, fontWeight: 600, color: c.text, margin: '6px 0 4px' }}>
             {tx.welcome}
           </h1>
