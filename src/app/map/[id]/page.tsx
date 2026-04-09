@@ -21,6 +21,7 @@ export default function ShopDetailPage() {
   const [loading, setLoading] = useState(true);
   const [showForm, setShowForm] = useState(false);
 
+  // Review form state
   const [sFlavor, setSFlavor] = useState(3);
   const [sVibe, setSVibe] = useState(3);
   const [sStay, setSStay] = useState(3);
@@ -52,6 +53,7 @@ export default function ShopDetailPage() {
 
   const c = getColors(theme);
 
+  // Compute average scores
   const avg = (key: keyof ShopReview) => {
     if (reviews.length === 0) return 0;
     return reviews.reduce((sum, r) => sum + (Number(r[key]) || 0), 0) / reviews.length;
@@ -75,7 +77,7 @@ export default function ShopDetailPage() {
     saved: locale === 'ja' ? '送信しました ✓' : locale === 'en' ? 'Submitted ✓' : '已送出 ✓',
     notFound: locale === 'ja' ? '見つかりませんでした' : locale === 'en' ? 'Shop not found' : '找不到這間店',
     allReviews: locale === 'ja' ? 'すべてのレビュー' : locale === 'en' ? 'All reviews' : '所有評價',
-    noReviewsYet: locale === 'ja' ? 'まだレビューがありません。最初のレビューを書きませんか？' : locale === 'en' ? 'No reviews yet. Be the first!' : '還沒有人評価，由你來當第一個吧！',
+    noReviewsYet: locale === 'ja' ? 'まだレビューがありません。最初のレビューを書きませんか？' : locale === 'en' ? 'No reviews yet. Be the first!' : '還沒有人評價，由你來當第一個吧！',
   };
 
   const handleSubmitReview = async () => {
@@ -126,8 +128,10 @@ export default function ShopDetailPage() {
       <div style={{ maxWidth: 960, margin: '0 auto', padding: '40px 24px 80px' }}>
         <Link href="/map" style={{ color: c.textSub, fontFamily: FONT.cute, fontSize: 13 }}>{tx.backToMap}</Link>
 
+        {/* Shop header */}
         <div style={{ display: 'grid', gridTemplateColumns: shop.cover_url ? '1fr 1fr' : '1fr', gap: 32, marginTop: 20 }}>
           {shop.cover_url && (
+            // eslint-disable-next-line @next/next/no-img-element
             <img src={shop.cover_url} alt={shop.name} style={{ width: '100%', borderRadius: 12, border: `1px solid ${c.border}`, aspectRatio: '16/9', objectFit: 'cover' }} />
           )}
           <div>
@@ -151,6 +155,7 @@ export default function ShopDetailPage() {
           </div>
         </div>
 
+        {/* Average hex radar */}
         {reviews.length > 0 && (
           <div style={{ marginTop: 36, backgroundColor: c.card, border: `1px solid ${c.border}`, borderRadius: 12, padding: 32, textAlign: 'center' }}>
             <div style={{ fontFamily: FONT.hand, fontSize: 13, color: c.accent, marginBottom: 8 }}>— {tx.avgScore} —</div>
@@ -167,6 +172,7 @@ export default function ShopDetailPage() {
           </div>
         )}
 
+        {/* Write review button / form */}
         {user && !saved && (
           <div style={{ marginTop: 36 }}>
             {!showForm ? (
@@ -267,9 +273,10 @@ export default function ShopDetailPage() {
           </div>
         )}
 
+        {/* All reviews */}
         <div style={{ marginTop: 40 }}>
           <h3 style={{ fontFamily: FONT.serif, fontSize: 22, fontWeight: 600, color: c.text, borderLeft: `3px solid ${c.accent}`, paddingLeft: 12 }}>
-            {tx.allReviews}（{reviews.length}）
+            {tx.allReviews}（{reviews.length{）
           </h3>
 
           {reviews.length === 0 ? (
