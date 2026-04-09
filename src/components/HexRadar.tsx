@@ -1,12 +1,12 @@
 'use client';
 
 /**
- * å­è§é·éå â å±ç¤ºå­åç¶­åº¦ç 0-5 åè©å
- * ç´ SVGï¼ç¡ç¬¬ä¸æ¹ä¾è³´
+ * 六角雷達圖 — 展示六個維度的 0-5 分評分
+ * 純 SVG，無第三方依賴
  */
 
 type Props = {
-  values: number[];      // length 6, each 0â5
+  values: number[];      // length 6, each 0–5
   labels: string[];      // length 6
   size?: number;         // px
   color?: string;        // accent color
@@ -30,7 +30,7 @@ export default function HexRadar({
   const labelRadius = radius + 22;
   const maxScore = 5;
 
-  // 6 angles, start from top (-90Â°), every 60Â°
+  // 6 angles, start from top (-90°), every 60°
   const angle = (i: number) => (-Math.PI / 2) + (i * Math.PI * 2) / 6;
 
   const pointOnCircle = (i: number, r: number) => ({
