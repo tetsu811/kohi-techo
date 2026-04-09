@@ -46,7 +46,7 @@ export default function BeanDetailPage() {
   const tx = {
     firstImpression: locale === 'ja' ? '第一口の印象' : locale === 'en' ? 'First-sip impression' : '第一口印象',
     flavorNotes: locale === 'ja' ? '思い出す風味' : locale === 'en' ? 'Flavor memory' : '聯想的風味',
-    recommendation: locale === 'ja' ? '友達への一言' : locale === 'en' ? 'A word to a friend' : '推薦給朋友',
+    recommendation: locale === 'ja' ? '及達への一言' : locale === 'en' ? 'A word to a friend' : '推薦給朋友',
     comments: locale === 'ja' ? 'コメント' : locale === 'en' ? 'Comments' : '留言',
     writeComment: locale === 'ja' ? 'コメントを書く...' : locale === 'en' ? 'Leave a comment...' : '留言⋯',
     post: locale === 'ja' ? '送る' : locale === 'en' ? 'Post' : '送出',
@@ -185,7 +185,8 @@ export default function BeanDetailPage() {
             <div style={{ marginBottom: 24 }}>
               <div style={{ fontFamily: FONT.cute, fontSize: 12, color: c.accent, marginBottom: 6 }}>— {tx.firstImpression}</div>
               <p style={{ fontFamily: FONT.hand, fontSize: 18, color: c.text, lineHeight: 1.9, margin: 0 }}>
-                「{review.first_impression}�#B ��          </p>
+                「{review.first_impression}」
+              </p>
             </div>
           )}
           {review.flavor_notes && (
