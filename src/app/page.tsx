@@ -22,15 +22,15 @@ export default function HomePage() {
     hero1: locale === 'ja' ? '一期一珈。' : locale === 'en' ? 'Every cup,' : '一期一珈，',
     hero2: locale === 'ja' ? '一杯ずつを、書き留めて。' : locale === 'en' ? 'worth remembering.' : '每一杯都值得被記住。',
     sub: locale === 'ja'
-      ? '珈琲を飥むたびに、六角のスコアと小さな物語を綴ろう。'
+      ? '珈琲を飲むたびに、六角のスコアと小さな物語を綴ろう。'
       : locale === 'en'
       ? 'Log every coffee with a hex-score and a little story.'
       : '用六角雷達圖與三段小札記，把每一杯咖啡存進你的手帖。',
     ctaWrite: locale === 'ja' ? '一杯書く' : locale === 'en' ? 'Write a cup' : '寫一杯',
-    ctaMap:   locale === 'ja' ? '珈琲地図を開く' : locale === 'en' ? 'Open the map' : '打開咖啡地圖',
+    ctaMap:   locale === 'ja' ? '珈琲地図を開く' : locale === 'en' ? 'Open the map' : '打開咆啡地圖',
 
     feat1Title: locale === 'ja' ? '六角の味わい' : locale === 'en' ? 'Six-axis tasting' : '六角風味',
-    feat1Desc:  locale === 'ja' ? '香り、酸味、甙味、苦味、コク、余韻。' : locale === 'en' ? 'Aroma, acidity, sweetness, bitterness, body, aftertaste.' : '香氣、酸味、甜感、苦味、醇厚、餘韻。',
+    feat1Desc:  locale === 'ja' ? '香り、酸味、甘味、苦味、コク、余韻。' : locale === 'en' ? 'Aroma, acidity, sweetness, bitterness, body, aftertaste.' : '香氣、酸味、甜感、苦味、醇厚、餘韻。',
 
     feat2Title: locale === 'ja' ? '三段の物語' : locale === 'en' ? 'Three-line story' : '三段式札記',
     feat2Desc:  locale === 'ja' ? '第一口、思い出す風味、友への一言。' : locale === 'en' ? 'First sip, flavor memory, a note for a friend.' : '第一口印象、聯想風味、推薦給朋友的一句話。',
@@ -156,7 +156,7 @@ export default function HomePage() {
               耶加雪菲
             </div>
             <div style={{ fontFamily: FONT.cute, fontSize: 12, color: c.textSub, marginBottom: 20 }}>
-              Yirgacheffe · 淺瓊 · 手沉‶
+              Yirgacheffe · 淺焙 · 手沖
             </div>
             <div
               style={{
@@ -207,7 +207,7 @@ export default function HomePage() {
             >
               適合下午三點，
               <br />
-              一個人發呇的地方。
+              一個人發呆的地方。
             </div>
           </div>
         </div>
