@@ -144,7 +144,7 @@ export default function BeansPage() {
                         paddingTop: 12,
                       }}
                     >
-                      「{r.first_impression}‍
+                      「{r.first_impression}」
                     </p>
                   )}
                 </div>
