@@ -236,7 +236,7 @@ export default function NewShopPage() {
                 </GoogleMap>
               ) : (
                 <div style={{ ...mapStyle, backgroundColor: c.bgSoft, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.cute, color: c.textSub }}>
-                  HA8,!8, ⋯
+                  載入中⋯
                 </div>
               )}
             </div>
