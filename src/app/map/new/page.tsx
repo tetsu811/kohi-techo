@@ -177,6 +177,7 @@ export default function NewShopPage() {
               cursor: 'pointer', overflow: 'hidden', transition: 'all 0.15s',
             }}>
               {photoPreview ? (
+                // eslint-disable-next-line @next/next/no-img-element
                 <img src={photoPreview} alt="preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               ) : (
                 <div style={{ textAlign: 'center' }}>
@@ -235,7 +236,7 @@ export default function NewShopPage() {
                 </GoogleMap>
               ) : (
                 <div style={{ ...mapStyle, backgroundColor: c.bgSoft, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.cute, color: c.textSub }}>
-                  載入中⋯
+                  HA8,!8, ⋯
                 </div>
               )}
             </div>
