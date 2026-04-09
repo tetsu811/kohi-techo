@@ -193,6 +193,7 @@ export default function NewBeanReviewPage() {
           </h1>
           <p style={{ fontFamily: FONT.cute, fontSize: 14, color: c.textSub, margin: 0 }}>{tx.subtitle}</p>
         </div>
+
         <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 1fr', gap: 40 }}>
           {/* Left column */}
           <div>
@@ -262,7 +263,7 @@ export default function NewBeanReviewPage() {
                   <label style={labelStyle}>{tx.roastLevel}</label>
                   <select value={roastLevel} onChange={(e) => setRoastLevel(e.target.value)} style={inputStyle}>
                     <option value="">—</option>
-                    <option value="light">淺焙 / Light</option>
+                    <option value="light">淹焙 / Light</option>
                     <option value="medium">中焙 / Medium</option>
                     <option value="medium-dark">中深焙</option>
                     <option value="dark">深焙 / Dark</option>
@@ -272,19 +273,19 @@ export default function NewBeanReviewPage() {
                   <label style={labelStyle}>{tx.brewMethod}</label>
                   <select value={brewMethod} onChange={(e) => setBrewMethod(e.target.value)} style={inputStyle}>
                     <option value="">—</option>
-                    <option value="pourover">手沲</option>
-                    <option value="espresso">羏式</option>
-                    <option value="latte">拿鑵</option>
-                    <option value="cold-brew">兰滴 / 冷萃</option>
-                    <option value="syphon">虸吸</option>
+                    <option value="pourover">手沖</option>
+                    <option value="espresso">義式</option>
+                    <option value="latte">拿鐵</option>
+                    <option value="cold-brew">冰滴 / 冷萃</option>
+                    <option value="syphon">虹吸</option>
                     <option value="aeropress">Aeropress</option>
-                  </select>
+                 </select>
                 </div>
               </div>
             </div>
 
             {/* Story */}
-            <h2 style={sectionTitle}>{tx.story}</h2>
+            <h(2 style={sectionTitle}>{tx.story}</h2>
             <div style={{ display: 'grid', gap: 14 }}>
               <textarea
                 value={firstImpression}
