@@ -19,24 +19,24 @@ export default function HomePage() {
   const c = getColors(theme);
 
   const t = {
-    hero1: locale === 'ja' ? 'ä¸æä¸çã' : locale === 'en' ? 'Every cup,' : 'ä¸æä¸çï¼',
-    hero2: locale === 'ja' ? 'ä¸æ¯ãã¤ããæ¸ãçãã¦ã' : locale === 'en' ? 'worth remembering.' : 'æ¯ä¸æ¯é½å¼å¾è¢«è¨ä½ã',
+    hero1: locale === 'ja' ? '一期一珈。' : locale === 'en' ? 'Every cup,' : '一期一珈，',
+    hero2: locale === 'ja' ? '一杯ずつを、書き留めて。' : locale === 'en' ? 'worth remembering.' : '每一杯都值得被記住。',
     sub: locale === 'ja'
-      ? 'çç²ãé£²ããã³ã«ãå­è§ã®ã¹ã³ã¢ã¨å°ããªç©èªãç¶´ããã'
+      ? '珈琲を飥むたびに、六角のスコアと小さな物語を綴ろう。'
       : locale === 'en'
       ? 'Log every coffee with a hex-score and a little story.'
-      : 'ç¨å­è§é·éåèä¸æ®µå°æ­è¨ï¼ææ¯ä¸æ¯åå¡å­é²ä½ çæå¸ã',
-    ctaWrite: locale === 'ja' ? 'ä¸æ¯æ¸ã' : locale === 'en' ? 'Write a cup' : 'å¯«ä¸æ¯',
-    ctaMap:   locale === 'ja' ? 'çç²å°å³ãéã' : locale === 'en' ? 'Open the map' : 'æéåå¡å°å',
+      : '用六角雷達圖與三段小札記，把每一杯咖啡存進你的手帖。',
+    ctaWrite: locale === 'ja' ? '一杯書く' : locale === 'en' ? 'Write a cup' : '寫一杯',
+    ctaMap:   locale === 'ja' ? '珈琲地図を開く' : locale === 'en' ? 'Open the map' : '打開咖啡地圖',
 
-    feat1Title: locale === 'ja' ? 'å­è§ã®å³ãã' : locale === 'en' ? 'Six-axis tasting' : 'å­è§é¢¨å³',
-    feat1Desc:  locale === 'ja' ? 'é¦ããé¸å³ãçå³ãè¦å³ãã³ã¯ãä½é»ã' : locale === 'en' ? 'Aroma, acidity, sweetness, bitterness, body, aftertaste.' : 'é¦æ°£ãé¸å³ãçæãè¦å³ãéåãé¤é»ã',
+    feat1Title: locale === 'ja' ? '六角の味わい' : locale === 'en' ? 'Six-axis tasting' : '六角風味',
+    feat1Desc:  locale === 'ja' ? '香り、酸味、甙味、苦味、コク、余韻。' : locale === 'en' ? 'Aroma, acidity, sweetness, bitterness, body, aftertaste.' : '香氣、酸味、甜感、苦味、醇厚、餘韻。',
 
-    feat2Title: locale === 'ja' ? 'ä¸æ®µã®ç©èª' : locale === 'en' ? 'Three-line story' : 'ä¸æ®µå¼æ­è¨',
-    feat2Desc:  locale === 'ja' ? 'ç¬¬ä¸å£ãæãåºãé¢¨å³ãåã¸ã®ä¸è¨ã' : locale === 'en' ? 'First sip, flavor memory, a note for a friend.' : 'ç¬¬ä¸å£å°è±¡ãè¯æ³é¢¨å³ãæ¨è¦çµ¦æåçä¸å¥è©±ã',
+    feat2Title: locale === 'ja' ? '三段の物語' : locale === 'en' ? 'Three-line story' : '三段式札記',
+    feat2Desc:  locale === 'ja' ? '第一口、思い出す風味、友への一言。' : locale === 'en' ? 'First sip, flavor memory, a note for a friend.' : '第一口印象、聯想風味、推薦給朋友的一句話。',
 
-    feat3Title: locale === 'ja' ? 'å°æ¹¾ã®çç²å°å³' : locale === 'en' ? 'Taiwan coffee map' : 'å°ç£åå¡å°å',
-    feat3Desc:  locale === 'ja' ? 'ç¾å³ããããå±å¿å°ããé·å±ã§ããæéãã' : locale === 'en' ? 'Flavor, vibe, and how long you can stay.' : 'é¢¨å³ãæ°åãéæå¯ä»¥å¾å¤ä¹ã',
+    feat3Title: locale === 'ja' ? '台湾の珈琲地図' : locale === 'en' ? 'Taiwan coffee map' : '台灣咖啡地圖',
+    feat3Desc:  locale === 'ja' ? '美味しさも、居心地も、長居できる時間も。' : locale === 'en' ? 'Flavor, vibe, and how long you can stay.' : '風味、氛圍、還有可以待多久。',
   };
 
   return (
@@ -63,7 +63,7 @@ export default function HomePage() {
               marginBottom: 16,
             }}
           >
-            â KÅhÄ« TechÅ ã» çç²æå¸ â
+            — Kōhī Techō ・ 珈琲手帖 —
           </div>
           <h1
             style={{
@@ -109,7 +109,7 @@ export default function HomePage() {
                 gap: 8,
               }}
             >
-              â {t.ctaWrite}
+              ✎ {t.ctaWrite}
             </Link>
             <Link
               href="/map"
@@ -127,7 +127,7 @@ export default function HomePage() {
                 gap: 8,
               }}
             >
-              â {t.ctaMap}
+              ☕ {t.ctaMap}
             </Link>
           </div>
         </div>
@@ -153,10 +153,10 @@ export default function HomePage() {
               No.042
             </div>
             <div style={{ fontFamily: FONT.serif, fontSize: 22, fontWeight: 600, color: c.text, marginBottom: 4 }}>
-              è¶å éªè²
+              耶加雪菲
             </div>
             <div style={{ fontFamily: FONT.cute, fontSize: 12, color: c.textSub, marginBottom: 20 }}>
-              Yirgacheffe Â· æ·ºç Â· ææ²
+              Yirgacheffe · 淺瓊 · 手沉‶
             </div>
             <div
               style={{
@@ -168,9 +168,9 @@ export default function HomePage() {
                 paddingTop: 16,
               }}
             >
-              ãææ¡ä¹¾çé¸çï¼
+              「杏桃乾的酸甜，
               <br />
-              å°¾é»æä¸é»é»ç³çæº«æãã
+              尾韻有一黝黑糖的溫柔。」
             </div>
           </div>
           <div
@@ -192,10 +192,10 @@ export default function HomePage() {
               Shop Log
             </div>
             <div style={{ fontFamily: FONT.serif, fontSize: 20, fontWeight: 600, color: c.text, marginBottom: 4 }}>
-              æ°çç¤¾åã»å°åº
+              民生社區・小店
             </div>
             <div style={{ fontFamily: FONT.cute, fontSize: 12, color: c.textSub, marginBottom: 18 }}>
-              ä¹ååå âââââ
+              久坐友善 ★★★★☆
             </div>
             <div
               style={{
@@ -205,9 +205,9 @@ export default function HomePage() {
                 lineHeight: 1.9,
               }}
             >
-              é©åä¸åä¸é»ï¼
+              適合下午三點，
               <br />
-              ä¸åäººç¼åçå°æ¹ã
+              一個人發呇的地方。
             </div>
           </div>
         </div>
@@ -225,9 +225,9 @@ export default function HomePage() {
         }}
       >
         {[
-          { title: t.feat1Title, desc: t.feat1Desc, icon: 'â' },
-          { title: t.feat2Title, desc: t.feat2Desc, icon: 'â' },
-          { title: t.feat3Title, desc: t.feat3Desc, icon: 'â' },
+          { title: t.feat1Title, desc: t.feat1Desc, icon: '◆' },
+          { title: t.feat2Title, desc: t.feat2Desc, icon: '✎' },
+          { title: t.feat3Title, desc: t.feat3Desc, icon: '◉' },
         ].map((f, i) => (
           <div
             key={i}
@@ -249,4 +249,5 @@ export default function HomePage() {
         ))}
       </section>
     </div>
-  DEuRI¦öâ
+  );
+}
