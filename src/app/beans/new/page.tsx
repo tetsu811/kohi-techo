@@ -285,7 +285,7 @@ export default function NewBeanReviewPage() {
             </div>
 
             {/* Story */}
-            <h(2 style={sectionTitle}>{tx.story}</h2>
+            <h2 style={sectionTitle}>{tx.story}</h2>
             <div style={{ display: 'grid', gap: 14 }}>
               <textarea
                 value={firstImpression}
